@@ -22,7 +22,7 @@ export const validationAmount = (value) => {
 
   if (!value || +value <= 0 || `${value}`.includes('-')) {
     data.isError = true;
-    data.text = 'This field cannot be negative';
+    data.text = 'Amount field must be more than 0';
   }
 
   if (!value) {

@@ -144,7 +144,7 @@ const getLabelAmount = (data) => {
 
   switch (value) {
     case ON_CHAIN_CONDITIONS.USER_HOLDS_TOKEN:
-      return 'Minimum amount of the token balance';
+      return 'Minimum Balance';
       break;
     case ON_CHAIN_CONDITIONS.ANY_CHAIN_ACTION:
       return 'Minimum amount of interaction';
