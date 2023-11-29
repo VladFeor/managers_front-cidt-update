@@ -1129,7 +1129,7 @@
           class="task-sidebar-card gate"
         >
           <div class="task-sidebar-card_title gate">
-            <div class="flex gap-1">
+            <div class="flex gap-1 flex-ends">
               <span @click="toggle" v-if="!visible" :class="{ gatesIsOpen: open }" class="arrow toggle-gate"></span>
               Gate
               <TooltipIcon
@@ -5243,15 +5243,20 @@ $name-font: 'Basis Grotesque Pro';
   justify-content: center;
   align-items: center;
   border: 1px solid #eaeafb;
+  transition: .3s;
   border-radius: 8px;
   padding: 5px 8px;
-
   font-family: Basis Grotesque Pro;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   color: #38405b;
+
+  &:hover {
+    background: #DAD9F7;
+  }
 }
+
 
 .modal-container {
   padding: 32px;
@@ -5371,5 +5376,8 @@ $name-font: 'Basis Grotesque Pro';
 }
 .html {
   word-break: break-word;
+}
+.flex-end{
+  align-items: flex-end;
 }
 </style>
